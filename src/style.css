@@ -3,21 +3,34 @@ html {
 }
 
 body {
-  height: 100%;
-  margin: 0;
+  min-height: 100%;
   border: solid;
+  margin: 0;
   display: flex;
   flex-direction: column;
+  /* background-image: url("https://www.transparenttextures.com/patterns/skulls.png"); */
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: #ffffff;
+}
+
+body > section {
+  flex: 1;
+  text-align: center;
 }
 
 #parent-header {
   display: flex;
   flex-direction: row;
-  border: solid blue;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(5, 94, 196, 0.801);
+  padding-inline: 15px;
 }
 #child1 {
-  flex: 1;
+  flex: 2;
+  color: beige;
 }
 #child2 {
   flex: 1;
@@ -30,6 +43,8 @@ body {
 }
 
 #main {
+  flex: 1;
   border: solid red;
   align-content: center;
+  flex-grow: 0;
 }
