@@ -1,0 +1,37 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+}
+
+#parent-header {
+  display: flex;
+  flex-direction: row;
+  border: solid blue;
+  flex-wrap: wrap-reverse;
+}
+#child1 {
+  flex: 1;
+}
+#child2 {
+  flex: 1;
+  border: 2px solid #ccc;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px;
+}
+
+#main {
+  border: solid red;
+  align-content: center;
+  background-image: url(images/cooking-ingredient-white-table-background_136595-24194.jpg);
+  background-repeat: no-repeat;
+}
