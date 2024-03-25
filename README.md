@@ -8,4 +8,4 @@
 
 ## DEMO
 
-- [App](https://raresrobotin.github.io/recipe-rescue)
+- [App](https://raresrobotin.github.io/Recipe-Rescue)
