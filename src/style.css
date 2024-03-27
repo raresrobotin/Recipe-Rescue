@@ -23,8 +23,20 @@ section {
 }
 
 #recipe-filter {
-  border: dotted red;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: aliceblue;
   margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#sbs {
+  margin-left: 10px;
+}
+
+#button {
+  margin-left: 10px;
 }
 
 #recipe-results {
@@ -33,7 +45,6 @@ section {
 }
 
 footer {
-  border: double green;
   padding: 15px;
   margin: 5px;
 }
