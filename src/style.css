@@ -18,21 +18,34 @@ section {
 }
 
 #title {
-  border: dotted red;
   margin: 5px;
+  margin-left: 33%;
+  margin-bottom: 45px;
 }
 
 #recipe-filter {
-  padding: 10px;
+  width: 600px;
+  margin-left: 25%;
+  background-color: antiquewhite;
+  padding: 15px;
   border-radius: 7px;
-  background-color: aliceblue;
-  margin: 5px;
+  position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+
+#recipe-filter:not(:last-child) {
+  margin-right: 10px;
 }
 
 #sbs {
-  margin-left: 10px;
+  width: 100%;
+}
+
+#label {
+  align-items: center;
+  position: absolute;
+  top: -8px;
 }
 
 #button {
