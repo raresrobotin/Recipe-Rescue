@@ -1,52 +1,39 @@
 html {
-  height: 100%;
+  border: solid black;
 }
 
 body {
-  min-height: 100%;
-  /* border: solid black; */
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  /* background-image: url("https://www.transparenttextures.com/patterns/skulls.png"); */
-  background-image: url("https://www.transparenttextures.com/patterns/food.png");
-  background-repeat: repeat;
-  background-size: auto;
-  background-color: #ffffff;
+  border: solid blue;
 }
 
-body > section {
-  flex: 1;
-  text-align: center;
+header {
+  border: double green;
+  padding: 15px;
+  margin: 5px;
 }
 
-#parent-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: rgba(5, 94, 196, 0.801);
-  padding-inline: 15px;
-  /* border: solid yellow; */
-  box-shadow: black 0px 3px 6px 0px;
-}
-#child1 {
-  flex: 2;
-  color: beige;
-}
-#child2 {
-  flex: 1;
-  border: 2px solid #ccc;
-  padding: 20px;
-  font-size: 15px;
-  border-radius: 5px;
-  width: 100%;
-  margin: 10px;
+section {
+  border: solid green;
+  margin: 5px;
 }
 
-#main {
-  flex: 1;
-  /* border: solid red; */
-  align-content: center;
-  flex-grow: 0;
+#title {
+  border: dotted red;
+  margin: 5px;
+}
+
+#recipe-filter {
+  border: dotted red;
+  margin: 5px;
+}
+
+#recipe-results {
+  border: dotted red;
+  margin: 5px;
+}
+
+footer {
+  border: double green;
+  padding: 15px;
+  margin: 5px;
 }

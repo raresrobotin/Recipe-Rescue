@@ -6,25 +6,49 @@
     <title>RecipeRescue</title>
   </head>
   <body>
-    <header>
-      <div id="parent-header">
-        <div id="child1">
-          <h1>Recipe 🍽 Rescue</h1>
-        </div>
-        <div id="child2">
-          <form>
-            <input type="text" placeholder="Search for recipes..." />
-            <button type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </header>
+    <header>Header</header>
     <section>
-      <div id="main">
-        <p>Don't know what to cook with what you have in the fridge?</p>
-        <p>STOP WASTING MAKE IT TASTY</p>
-        <h1>Find a Recipe</h1>
+      <div id="title">
+        <p>Don't know what to cook with what you heve in your fridge?</p>
+        <h1>Add your ingredients and find a recipe.</h1>
+      </div>
+      <div id="recipe-filter">
+        <form>
+          <div>
+            <label for="ingredient">Ingredients*</label>
+            <input type="text" id="ingredient" placeholder="pepper, egg, apple..." required />
+          </div>
+          <div>
+            <label for="type">Type of meal</label>
+            <input type="text" id="type" placeholder="breakfast, snack..." />
+          </div>
+          <div>
+            <label for="time">Cooking Time</label>
+            <input type="text" id="time" placeholder="30 min, 1h, slow..." />
+          </div>
+          <div>
+            <button type="submit" class="button">Search</button>
+          </div>
+        </form>
+      </div>
+      <div id="recipe-results">
+        <div>
+          <p>here img</p>
+          <h1>Recipe Name 1</h1>
+          <button type="menu">View</button>
+        </div>
+        <div>
+          <p>here img</p>
+          <h1>Recipe Name 2</h1>
+          <button type="menu">View</button>
+        </div>
+        <div>
+          <p>here img</p>
+          <h1>Recipe Name 3</h1>
+          <button type="menu">View</button>
+        </div>
       </div>
     </section>
+    <footer>Footer</footer>
   </body>
 </html>
