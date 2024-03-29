@@ -1,5 +1,8 @@
 html {
   border: solid black;
+  background-image: url(/Users/admin/Desktop/imgs.jpeg);
+  background-size: cover;
+  background-position: unset;
 }
 
 body {
@@ -13,23 +16,25 @@ header {
 }
 
 section {
-  border: solid green;
   margin: 5px;
 }
 
 #title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  color: white;
   margin: 5px;
-  margin-left: 33%;
+  margin-left: 27%;
   margin-bottom: 45px;
 }
 
 #recipe-filter {
-  border: 2px solid black;
   display: flex;
   justify-content: center;
   position: relative;
   padding: 15px;
   border-radius: 7px;
+  background-color: white;
 }
 
 #recipe-filter input {
@@ -47,12 +52,9 @@ section {
 }
 
 #sbs {
+  padding: 3px 50px;
   margin-top: 15px;
   border: none;
-}
-
-#sbs span {
-  margin-right: 15px;
 }
 
 #label {
@@ -82,8 +84,20 @@ section {
 }
 
 #recipe-results {
-  border: dotted red;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
   margin: 5px;
+}
+
+#img {
+  margin-right: 50px;
+  border-radius: 10px;
+}
+
+#img img {
+  width: 160px;
+  height: auto;
 }
 
 footer {
