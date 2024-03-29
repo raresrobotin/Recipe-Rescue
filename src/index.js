@@ -2,16 +2,26 @@ import "./style.css";
 
 console.warn("start app");
 
-const recipes = [];
+let allRecipes = [];
 
-function searchRecipes() {
+function $(selector) {
+  return document.querySelector(selector);
+}
+
+function fetchRecipes(){
+  return fetch("http://localhost:3000/recipes.json", {
+    
+  }
+}
+
+/*function searchRecipes() {
   const ingredientInput = document.getElementById("ingredientInput").value.toLowerCase();
   const searchedRecipes = recipes.filter(recipe =>
     recipe.ingredients.some(ingredient => ingredient.toLowerCase().includes(ingredientInput))
   );
 
   displayRecipes(searchedRecipes);
-}
+}*/
 
 function displayRecipes(recipes) {
   const recipeList = document.getElementById("recipeList");
