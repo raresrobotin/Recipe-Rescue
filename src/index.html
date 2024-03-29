@@ -12,18 +12,18 @@
         <p>Don't know what to cook with what you have in your fridge?</p>
         <h1>Add your ingredients and find a recipe!</h1>
       </div>
-      <div id="recipe-filter">
+      <div class="recipe-search">
         <form>
-          <div id="sbs">
-            <label id="label" for="ingredient">Ingredients*</label>
+          <div id="search">
+            <label id="ingredientInput" for="ingredient">Ingredients*</label>
             <input type="text" placeholder="pepper, egg, apple..." required />
-            <span>|</span>
+            <span">|</span>
             <label id="label" for="type">Type of meal</label>
             <input type="text" placeholder="breakfast, snack..." />
             <span>|</span>
-            <label id="label" for="time">Cooking Time</label>
+            <label id="timeInput" for="time">Cooking Time</label>
             <input type="text" placeholder="30 min, 1h, slow..." />
-            <button id="button" type="submit" class="button">Search</button>
+            <button onclick="searchRecipes()" type="button">Search</button>
           </div>
         </form>
       </div>
@@ -39,7 +39,7 @@
           <button type="menu">View</button>
         </div>
         <div>
-          <img id="img" src="images/cmb-hms-bite.png" alt="recipe pic" height="160px" width="160px" />
+          <img id="img" src="/Users/admin/Desktop/Caprese Salad.png" alt="recipe pic" height="160px" width="160px" />
           <h1 id="recipes-title">Caprese Salad</h1>
           <button type="menu">View</button>
         </div>
