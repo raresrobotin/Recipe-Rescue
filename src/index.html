@@ -6,51 +6,57 @@
     <title>RecipeRescue</title>
   </head>
   <body>
-    <header>Header</header>
-    <section>
-      <div id="title">
-        <p>Don't know what to cook with what you have in your fridge?</p>
-        <h1>Add your ingredients and find a recipe!</h1>
+    <header>
+      <div id="header-wrapper">
+        <div id="logo">
+          <img src="images/logo-no-background.svg" width="150" alt="Adina" />
+        </div>
+        <div id="title">
+          <p>Don't know what to cook with what you have in your fridge?</p>
+        </div>
       </div>
-      <div class="recipe-search">
-        <form>
-          <div id="search">
-            <label id="ingredientInput" for="ingredient">Ingredients*</label>
-            <input type="text" placeholder="pepper, egg, apple..." required />
-            <span>|</span>
-            <label id="label" for="type">Type of meal</label>
-            <input type="text" placeholder="breakfast, snack..." />
-            <span>|</span>
-            <label id="timeInput" for="time">Cooking Time</label>
-            <input type="text" placeholder="30 min, 1h, slow..." />
-            <button id="button" type="submit" class="button">Search</button>
-          </div>
-        </form>
+    </header>
+    <section>
+      <div id="subtitle">
+        <p>Add your ingredients and find a recipe.</p>
+      </div>
+      <div class="recipe-filter">
+        <label for="Ingredients">Ingredients</label>
+        <input type="text" placeholder="pepper, egg, apple..." name="Ingredients" />
+        <span>|</span>
+        <label for="Type">Type of meal</label>
+        <input type="text" placeholder="breakfast, snack..." name="Type" />
+        <span>|</span>
+        <label for="Time">Cooking time</label>
+        <input type="text" placeholder="30 min, 1h, slow..." name="Time" />
+        <button type="submit" class="Search">Search</button>
       </div>
       <div id="recipe-results">
         <div>
-          <img id="img" src="/Users/admin/Desktop/avcd-toast.png" alt="recipe pic" height="160px" width="160px" />
+          <img class="recipe-img" src="images/avocado.png" alt="avocado toast" height="160px" />
           <h1 id="recipes-title">Avocado Toast</h1>
           <button type="menu">View</button>
         </div>
         <div>
-          <img id="img" src="/Users/admin/Desktop/berry-yg.png " alt="recipe pic" height="160px" width="160px" />
-          <h1 id="recipes-title2">Berry Yogurt Parfait</h1>
+          <img class="recipe-img" src="images/berry yogurt.png" alt="recipe pic" height="160px" />
+          <h1 id="recipes-title">Berry Yogurt Parfait</h1>
           <button type="menu">View</button>
         </div>
         <div>
-          <img id="img" src="/Users/admin/Desktop/Caprese Salad.png" alt="recipe pic" height="160px" width="160px" />
+          <img class="recipe-img" src="images/caprese.png" alt="recipe pic" height="160px" />
           <h1 id="recipes-title">Caprese Salad</h1>
           <button type="menu">View</button>
         </div>
         <div>
-          <img id="img" src="/Users/admin/Desktop/cmb-hms-bite.png" alt="recipe pic" height="160px" width="160px" />
+          <img class="recipe-img" src="images/cucumber bites.png" alt="recipe pic" height="160px" />
           <h1>Cucumber Hummus Bites</h1>
           <button type="menu">View</button>
         </div>
       </div>
     </section>
+
     <footer>Footer</footer>
+
     <script src="index.js"></script>
   </body>
 </html>
