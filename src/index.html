@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>RecipeRescue</title>
   </head>
   <body>
@@ -21,15 +22,15 @@
         <p>Add your ingredients and find a recipe.</p>
       </div>
       <div class="recipe-filter">
-        <label for="Ingredients">Ingredients</label>
+        <label for="ingredients">Ingredients</label>
         <input type="text" placeholder="pepper, egg, apple..." name="Ingredients" />
         <span>|</span>
-        <label for="Type">Type of meal</label>
-        <input type="text" placeholder="breakfast, snack..." name="Type" />
+        <label for="type">Type of meal</label>
+        <input type="text" placeholder="breakfast, snack..." name="Type of meal" />
         <span>|</span>
-        <label for="Time">Cooking time</label>
-        <input type="text" placeholder="30 min, 1h, slow..." name="Time" />
-        <button type="submit" class="Search">Search</button>
+        <label for="time">Cooking time</label>
+        <input type="text" placeholder="30 min, 1h, slow..." name="Time of cooking" />
+        <button onclick="filterRecipes()" type="button" class="Search">Search</button>
       </div>
       <div id="recipe-results">
         <div>
@@ -56,7 +57,6 @@
     </section>
 
     <footer>Footer</footer>
-
     <script src="index.js"></script>
   </body>
 </html>

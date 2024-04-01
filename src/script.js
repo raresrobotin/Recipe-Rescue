@@ -11,7 +11,7 @@ function filterRecipes() {
       var filteredRecipes = recipes.filter(recipe => {
         return (
           (recipe.ingredients.includes(ingredients) || !ingredients) &&
-          (recipe.type.includes(type) || !type) &&
+          (recipe.mealType.includes(type) || !type) &&
           (recipe.time.includes(time) || !time)
         );
       });
