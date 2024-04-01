@@ -1,3 +1,4 @@
+import "./style.css";
 console.warn("start app");
 
 function filterRecipes() {
