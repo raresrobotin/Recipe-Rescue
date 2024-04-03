@@ -36,3 +36,19 @@ function displayRecipes(recipes) {
     recipeResults.appendChild(div);
   });
 }
+
+var viewButtons = document.querySelectorAll(".view-btn");
+viewButtons.forEach(button => {
+  button.addEventListener("click", function () {
+    var modal = document.getElementById("myModal");
+    var modalTitle = document.getElementById("modal-title");
+    var recipeTitleId = button.previousElementSibling.id;
+    var recipeTitleElement = document.getElementById(recipeTitleId);
+    modalTitle.textContent = recipeTitleElement.textContent;
+    modal.style.display = "block";
+    var closeModalBtn = document.querySelector(".close");
+    closeModalBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+  });
+});
