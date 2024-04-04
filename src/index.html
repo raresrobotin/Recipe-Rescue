@@ -26,10 +26,25 @@
         <input type="text" placeholder="pepper, egg, apple..." name="Ingredients" />
         <span>|</span>
         <label for="type">Type of meal</label>
-        <input type="text" placeholder="breakfast, snack..." name="Type of meal" />
+        <input type="text" placeholder="-Select-" list="input-list" name="Type of meal" />
+        <datalist id="input-list">
+          <option value="Breakfast"></option>
+          <option value="Snack"></option>
+          <option value="Desert"></option>
+          <option value="Dinner"></option>
+          <option value="Drink"></option>
+          <option value="Lunch"></option>
+        </datalist>
         <span>|</span>
         <label for="time">Cooking time</label>
-        <input type="text" placeholder="30 min, 1h, slow..." name="Time of cooking" />
+        <input type="text" placeholder="-Select-" list="input-list2" name="Time of cooking" />
+        <datalist id="input-list2">
+          <option value="10 min"></option>
+          <option value="15 min"></option>
+          <option value="20 min"></option>
+          <option value="30 min"></option>
+          <option value="1 hour"></option>
+        </datalist>
         <button onclick="filterRecipes()" type="button" class="Search">Search</button>
       </div>
       <div id="recipe-results">
@@ -43,33 +58,32 @@
         <div>
           <img class="recipe-img" src="images/avocado.png" alt="avocado toast" height="160px" />
           <h1 id="modal-title-1">Avocado Toast</h1>
-          <button type="menu" class="view-btn">View</button>
+          <button type="menu" class="view-btn" data-recipe-index="0">View</button>
         </div>
         <div>
           <img class="recipe-img" src="images/berry yogurt.png" alt="recipe pic" height="160px" />
           <h1 id="modal-title-2">Berry Yogurt Parfait</h1>
-          <button type="menu" class="view-btn">View</button>
+          <button type="menu" class="view-btn" data-recipe-index="1">View</button>
         </div>
         <div>
           <img class="recipe-img" src="images/caprese.png" alt="recipe pic" height="160px" />
           <h1 id="modal-title-3">Caprese Salad</h1>
-          <button type="menu" class="view-btn">View</button>
+          <button type="menu" class="view-btn" data-recipe-index="2">View</button>
         </div>
         <div>
           <img class="recipe-img" src="images/cucumber bites.png" alt="recipe pic" height="160px" />
           <h1 id="modal-title-4">Cucumber Hummus Bites</h1>
-          <button type="menu" class="view-btn">View</button>
+          <button type="menu" class="view-btn" data-recipe-index="3">View</button>
         </div>
       </div>
     </section>
     <div id="myModal" class="modal">
       <div class="modal-content">
-        <h1 id="modal-title"></h1>
         <span class="close">&times;</span>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maxime nisi amet aut repellat ullam
-          perspiciatis illum corrupti, veritatis saepe.
-        </p>
+        <h1 id="modal-title"></h1>
+        <p id="modal-ingredients"></p>
+        <p id="modal-instructions"></p>
+        <p id="modal-time"></p>
       </div>
     </div>
     <!-- The Modal -->
