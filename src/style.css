@@ -13,6 +13,8 @@ html {
 }*/
 
 body {
+  border: solid rgb(255, 255, 255);
+  padding: 5px;
   margin: 0;
   min-height: 100%;
   display: flex;
@@ -79,6 +81,13 @@ header {
   margin-bottom: 30px;
 }
 
+.top-menu-bar {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 2px;
+}
+
 .recipe-filter {
   display: flex;
   align-items: center;
@@ -119,6 +128,13 @@ header {
   margin-right: 10px;
 }
 
+#display-data {
+  padding: 15px;
+}
+
+.container {
+  border: #114232;
+}
 /*#recipe-filter :focus {
   outline: none;
 }

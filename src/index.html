@@ -21,17 +21,20 @@
       <div id="subtitle">
         <p>Add your ingredients and find a recipe.</p>
       </div>
+      <!--<label for="ingredients">Ingredients*</label>
+      <input id="input" name="ingredients" type="text" placeholder="pepper, egg, apple..." autofocus />-->
       <div class="recipe-filter">
-        <label for="ingredients">Ingredients</label>
-        <input type="text" placeholder="pepper, egg, apple..." name="Ingredients" />
+        <label for="ingredients">Ingredients*</label>
+        <input id="input" name="ingredients" type="text" placeholder="pepper, egg, apple..." autofocus />
         <span>|</span>
         <label for="type">Type of meal</label>
-        <input type="text" placeholder="breakfast, snack..." name="Type of meal" />
+        <input id="input" type="text" placeholder="breakfast, snack..." autofocus />
         <span>|</span>
         <label for="time">Cooking time</label>
-        <input type="text" placeholder="30 min, 1h, slow..." name="Time of cooking" />
-        <button onclick="filterRecipes()" type="button" class="Search">Search</button>
+        <input id="input" type="text" placeholder="30 min, 1h, slow..." autofocus />
+        <button type="button" class="Search">Search</button>
       </div>
+      <div id="display-data"></div>
       <div id="recipe-results">
         <div>
           <img class="recipe-img" src="images/avocado.png" alt="avocado toast" height="160px" />
