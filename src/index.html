@@ -33,6 +33,13 @@
         <button onclick="filterRecipes()" type="button" class="Search">Search</button>
       </div>
       <div id="recipe-results">
+        <!-- MODAL ADD NEW RECIPE BUTTON-->
+        <div>
+          <button id="openModal">
+            <img class="recipe-img" src="images/plus_grey.png" alt="plus sign" height="100px" />
+          </button>
+        </div>
+        <!-- MODAL ADD NEW RECIPE-->
         <div>
           <img class="recipe-img" src="images/avocado.png" alt="avocado toast" height="160px" />
           <h1 id="modal-title-1">Avocado Toast</h1>
@@ -65,6 +72,32 @@
         </p>
       </div>
     </div>
+    <!-- The Modal -->
+    <div id="modal1" class="modal11">
+    <!-- Modal content -->
+      <div class="modal-content1">
+        <span class="close1">&times;</span>
+        <h2>Add New Recipe</h2>
+        <div>
+          <form>
+            <label for="name">Recipe name</label>
+            <input type="text" placeholder="recipe name" name="name" />
+
+            <label for="ingredients">Ingredients</label>
+            <input type="text" placeholder="recipe ingredients" name="ingredients" />
+
+           <label for="instructions">Cooking instructions</label>
+           <input type="text" placeholder="cooking instructions" name="instructions" />
+
+            <label for="time">Cooking time</label>
+            <input type="text" placeholder="time of cooking" name="time_of_cooking" />
+
+           <button type="button" class="add-new">Add Recipe</button>
+         </form>
+        </div>
+      </div>
+      <!-- Modal content -->
+
     <footer>Footer</footer>
   </body>
 </html>
