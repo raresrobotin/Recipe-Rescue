@@ -1,38 +1,52 @@
 import "./style.css";
 console.warn("start app");
 
-function filterRecipes() {
-  var ingredients = document.getElementById("ingredientsInput").value;
-  var type = document.getElementById("typeInput").value;
-  var time = document.getElementById("timeInput").value;
+const apiEndpoint = "recipes.json";
+const display = document.querySelector("#display-data");
+const input = document.querySelector("#input");
 
-  fetch("recipes.json")
-    .then(response => response.json())
-    .then(recipes => {
-      var filteredRecipes = recipes.filter(recipe => {
-        return (
-          (recipe.ingredients.includes(ingredients) || !ingredients) &&
-          (recipe.type.includes(type) || !type) &&
-          (recipe.time.includes(time) || !time)
-        );
-      });
+//get data from json and insert it
+const getData = async () => {
+  const res = await fetch(apiEndpoint);
+  const data = await res.json();
+  //console.log(data);
+  return data;
+};
 
-      displayRecipes(filteredRecipes);
+const displayRecipes = async () => {
+  let query = input.value;
+  //console.log("Query::", query);
+
+  const payload = await getData();
+
+  let dataDisplay = payload
+    .filter(eventData => {
+      if (query === "") {
+        return false;
+      } else if (eventData.ingredients.toLowerCase().includes(query.toLowerCase())) {
+        return eventData;
+      }
     })
-    .catch(error => console.error("Error fetching recipes:", error));
-}
+    .map(object => {
+      const { name, type, ingredients, instructions, time } = object;
 
-function displayRecipes(recipes) {
-  var recipeResults = document.getElementById("recipe-results");
-  recipeResults.innerHTML = "";
-
-  recipes.forEach(recipe => {
-    var div = document.createElement("div");
-    div.innerHTML = `
-      <img class="recipe-img" src="${recipe.image}" alt="${recipe.name}" height="160px" />
-      <h1>${recipe.name}</h1>
-      <button type="menu">View</button>
+      return `
+    <div class= "container">
+    <p> Name: ${name}</p>
+    <p> Type of meal: ${type}</p>
+    <p> Ingredients: ${ingredients}</p>
+    <p> Instructions: ${instructions}</p>
+    <p> Cooking Time: ${time}</p>
+    </div>
+    <hr>
     `;
-    recipeResults.appendChild(div);
-  });
-}
+    })
+    .join("");
+
+  display.innerHTML = dataDisplay;
+};
+displayRecipes();
+
+input.addEventListener("input", () => {
+  displayRecipes();
+});
