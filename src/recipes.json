@@ -14,6 +14,20 @@
   },
 
   {
+    "name": "Caprese Salad",
+    "ingredients": "2 large tomatoes, sliced, 8 ounces fresh mozzarella cheese, sliced, 1/4 cup fresh basil leaves, 2 tablespoons balsamic glaze",
+    "time": "10 minutes",
+    "instructions": "Toast the slices of whole wheat bread until golden brown. Spread peanut butter evenly on each slice of toast. Arrange the thinly sliced banana on top of the peanut butter layer. Drizzle with honey or maple syrup if desired, and sprinkle with chia seeds or sliced almonds for extra crunch. Serve immediately and enjoy your delicious peanut butter banana toast!"
+  },
+
+  {
+    "name": "Cucumber Hummus Bites",
+    "ingredients": "1 cucumber, Hummus, Cherry tomatoes, sliced in half, Optional toppings: feta cheese, olives, parsley",
+    "time": "10 minutes",
+    "instructions": "Cut the cucumber into thick slices, about 1/2 inch thick.Using a small spoon or melon baller, scoop out a small portion of the center of each cucumber slice to create a well.Fill each cucumber well with hummus.Top each cucumber hummus bite with a slice of cherry tomato. Add optional toppings such as crumbled feta cheese, sliced olives, or chopped parsley if desired.Serve immediately and enjoy your refreshing Cucumber Hummus Bites!"
+  },
+
+  {
     "name": "Simple Scrambled Eggs",
     "ingredients": "3 eggs, 2 tablespoons milk, salt and pepper to taste.",
     "time": "10 minutes",
@@ -24,13 +38,6 @@
     "name": "Peanut Butter Banana Toast",
     "ingredients": "2 slices of whole wheat bread, 2 tablespoons peanut butter, 1 ripe banana, thinly sliced. Optional: honey or maple syrup for drizzling Optional: a sprinkle of chia seeds or sliced almonds",
     "time": "3 minutes",
-    "instructions": "Toast the slices of whole wheat bread until golden brown. Spread peanut butter evenly on each slice of toast. Arrange the thinly sliced banana on top of the peanut butter layer. Drizzle with honey or maple syrup if desired, and sprinkle with chia seeds or sliced almonds for extra crunch. Serve immediately and enjoy your delicious peanut butter banana toast!"
-  },
-
-  {
-    "name": "Caprese Salad",
-    "ingredients": "2 large tomatoes, sliced, 8 ounces fresh mozzarella cheese, sliced, 1/4 cup fresh basil leaves, 2 tablespoons balsamic glaze",
-    "time": "10 minutes",
     "instructions": "Toast the slices of whole wheat bread until golden brown. Spread peanut butter evenly on each slice of toast. Arrange the thinly sliced banana on top of the peanut butter layer. Drizzle with honey or maple syrup if desired, and sprinkle with chia seeds or sliced almonds for extra crunch. Serve immediately and enjoy your delicious peanut butter banana toast!"
   },
 
@@ -53,13 +60,6 @@
     "ingredients": "4 pork chops, 3 tablespoons honey, 2 cloves garlic, minced, 2 tablespoons soy sauce",
     "time": "20 minutes",
     "instructions": "Preheat oven to 375°F (190°C). In a small bowl, mix together honey, minced garlic, and soy sauce. Place pork chops in a baking dish and pour the honey garlic mixture over them, ensuring they're evenly coated. Bake in the preheated oven for 15-18 minutes, or until pork chops are cooked through flipping halfway through cooking. Serve hot and enjoy your flavorful Honey Garlic Pork Chops!"
-  },
-
-  {
-    "name": "Cucumber Hummus Bites",
-    "ingredients": "1 cucumber, Hummus, Cherry tomatoes, sliced in half, Optional toppings: feta cheese, olives, parsley",
-    "time": "10 minutes",
-    "instructions": "Cut the cucumber into thick slices, about 1/2 inch thick.Using a small spoon or melon baller, scoop out a small portion of the center of each cucumber slice to create a well.Fill each cucumber well with hummus.Top each cucumber hummus bite with a slice of cherry tomato. Add optional toppings such as crumbled feta cheese, sliced olives, or chopped parsley if desired.Serve immediately and enjoy your refreshing Cucumber Hummus Bites!"
   },
 
   {
