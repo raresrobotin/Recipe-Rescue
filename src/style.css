@@ -87,8 +87,8 @@ header {
   background-color: #ffbf5d;
   background-position: center;
   background-size: cover;
-  height: 80px;
-  margin-bottom: 50px;
+  height: 70px;
+  margin-bottom: 25px;
 }
 
 .recipe-filter label {
@@ -174,15 +174,51 @@ header {
 }
 
 #recipe-results {
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(7, 10em);
   margin: 5px;
 }
 
+#recipe-results h1 {
+  padding-bottom: -10px;
+  font-size: 18px;
+  margin-left: 40px;
+}
+
+#recipe-results button {
+  margin-left: 42px;
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 10px;
+  font-weight: 450;
+  padding: 5px 15px;
+  text-align: center;
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-5px);
+  padding: 10px 30px;
+}
+
 .recipe-img {
-  margin-right: 50px;
+  text-align: center;
+  margin-left: 40px;
   border-radius: 10px;
+}
+
+.recipe-img img {
+  max-width: 100%;
 }
 
 /*footer {
