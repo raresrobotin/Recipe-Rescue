@@ -70,3 +70,19 @@ viewButtons.forEach(button => {
     }
   });
 });
+
+// Event listener to open the modal when button is clicked
+document.getElementById("openModal").addEventListener("click", function () {
+  var modal = document.getElementById("modal1");
+  modal.style.display = "block";
+});
+
+// Close modal when "x" button is clicked
+document.querySelector(".close1").addEventListener("click", function () {
+  var modal = document.getElementById("modal1");
+  modal.style.display = "none";
+});
+
+if (window.location.hash === "#modal1") {
+  window.location.hash = "";
+}
