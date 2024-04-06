@@ -51,6 +51,7 @@ input.addEventListener("input", () => {
   displayRecipes();
 });
 
+// Start View recipe modal
 function displayRecipe(recipe) {
   var modal = document.getElementById("myModal");
   var modalTitle = document.getElementById("modal-title");
@@ -86,3 +87,4 @@ viewButtons.forEach(button => {
     }
   });
 });
+// End View recipe modal
