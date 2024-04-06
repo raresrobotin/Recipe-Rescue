@@ -50,3 +50,39 @@ displayRecipes();
 input.addEventListener("input", () => {
   displayRecipes();
 });
+
+function displayRecipe(recipe) {
+  var modal = document.getElementById("myModal");
+  var modalTitle = document.getElementById("modal-title");
+  var modalType = document.getElementById("modal-type");
+  var modalIngredients = document.getElementById("modal-ingredients");
+  var modalInstructions = document.getElementById("modal-instructions");
+  var modalTime = document.getElementById("modal-time");
+
+  modalTitle.textContent = recipe.name;
+  modalType.textContent = "Type: " + recipe.type;
+  modalIngredients.textContent = "Ingredients: " + recipe.ingredients;
+  modalInstructions.textContent = "Instructions: " + recipe.instructions;
+  modalTime.textContent = "Time: " + recipe.time;
+
+  modal.style.display = "block";
+
+  var closeModalBtn = document.querySelector(".close");
+  closeModalBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+}
+var viewButtons = document.querySelectorAll(".view-btn");
+viewButtons.forEach(button => {
+  button.addEventListener("click", async function () {
+    try {
+      var response = await fetch("recipes.json");
+      var recipes = await response.json();
+      var recipeIndex = parseInt(button.dataset.recipeIndex);
+      var recipe = recipes[recipeIndex];
+      displayRecipe(recipe);
+    } catch (error) {
+      console.error("Eroare:", error);
+    }
+  });
+});

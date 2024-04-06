@@ -21,6 +21,7 @@
       <div id="subtitle">
         <p>Add your ingredients and find a recipe.</p>
       </div>
+      <!-- Start Search/Filter-->
       <div class="recipe-filter">
         <label for="ingredients">Ingredients</label>
         <input id="input" type="text" placeholder="pepper, egg, apple..." name="Ingredients" autofocus />
@@ -46,81 +47,94 @@
           <option value="1 hour"></option>
         </datalist>
         <button type="button" class="Search">Search</button>
-      </div>
+      </div>      
+      <!--End Search/Filter-->
+
+
       <div id="display-data"></div>
-      <div id="recipe-results">
-        <div>
-          <button id="openModal">
-            <img class="recipe-img" src="images/plus_grey.png" alt="plus sign" height="100px" />
-          </button>
-        </div>
-        <div>
+
+      <div id="recipe-results" class="recipe-container" >
+        <div class="align-recipes">
+          <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/avocado.png" alt="avocado toast" height="110px" />
-          <h1 id="modal-title-1">Avocado Toast</h1>
+          <h1 class="recipe-title" id="modal-title-1">Avocado Toast</h1>
           <button type="menu" class="view-btn" data-recipe-index="0">View</button>
         </div>
         <div class="align-recipes">
+          <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/berry yogurt.png" alt="recipe pic" height="110px" />
-          <h1 id="modal-title-2">Berry Yogurt Parfait</h1>
+          <h1 class="recipe-title" id="modal-title-2">Berry Yogurt</h1>
           <button type="menu" class="view-btn" data-recipe-index="1">View</button>
         </div>
         <div class="align-recipes">
+          <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/caprese.png" alt="recipe pic" height="110px" />
-          <h1 id="modal-title-3">Caprese Salad</h1>
+          <h1 class="recipe-title" id="modal-title-3">Caprese Salad</h1>
           <button type="menu" class="view-btn" data-recipe-index="2">View</button>
         </div>
         <div class="align-recipes">
+          <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/cucumber bites.png" alt="recipe pic" height="110px" />
-          <h1 id="modal-title-4">Cucumber Hummus Bites</h1>
+          <h1 class="recipe-title" id="modal-title-4">Cucumber Hummus Bites</h1>
           <button type="menu" class="view-btn" data-recipe-index="3">View</button>
         </div>
         <div class="align-recipes">
+          <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/sc-eggs.png" alt="recipe pic" height="110px" />
-          <h1 id="modal-title-5">Simple Scrambled Eggs</h1>
+          <h1 class="recipe-title" id="modal-title-5">Simple Scrambled Eggs</h1>
           <button type="menu" class="view-btn" data-recipe-index="4">View</button>
         </div>
         <div class="align-recipes">
+          <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/pb-toast.png" alt="recipe pic" height="110px" />
-          <h1 id="modal-title-6">Peanut Butter Banana Toast</h1>
+          <h1 class="recipe-title" id="modal-title-6">Banana Toast</h1>
           <button type="menu" class="view-btn" data-recipe-index="5">View</button>
         </div>
         <div class="align-recipes">
+          <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/pesto-pasta.png" alt="recipe pic" height="110px" />
-          <h1 id="modal-title-7">Pesto Chicken Pasta</h1>
+          <h3 class="recipe-title" id="modal-title-7">Pesto Chicken Pasta</h3>
           <button type="menu" class="view-btn" data-recipe-index="6">View</button>
         </div>
         <div class="align-recipes">
+          <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/stirfry.png" alt="recipe pic" height="110px" />
-          <h1 id="modal-title-8">Veggie Stir-Fry</h1>
+          <h1 class="recipe-title" id="modal-title-8">Veggie Stir-Fry</h1>
           <button type="menu" class="view-btn" data-recipe-index="7">View</button>
         </div>
         <div class="align-recipes">
+          <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/pork-chops.png" alt="recipe pic" height="110px" />
-          <h1 id="modal-title-9">Honey Garlic Pork Chops</h1>
+          <h1 class="recipe-title" id="modal-title-9">Honey Pork Chops</h1>
           <button type="menu" class="view-btn" data-recipe-index="8">View</button>
         </div>
         <div class="align-recipes">
+          <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/fr-salad.png" alt="recipe pic" height="110px" />
-          <h1 id="modal-title-10">Fruit Salad with Honey-Lime Dressing</h1>
+          <h1 class="recipe-title" id="modal-title-10">Fruit Salad</h1>
           <button type="menu" class="view-btn" data-recipe-index="9">View</button>
         </div>
         <div class="align-recipes">
+          <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/oreo-bites.png" alt="recipe pic" height="110px" />
-          <h1 id="modal-title-11">No-Bake Oreo Cheesecake Bites</h1>
+          <h1 class="recipe-title" id="modal-title-11">Oreo Cheesecake</h1>
           <button type="menu" class="view-btn" data-recipe-index="10">View</button>
         </div>
       </div>
     </section>
+       <!-- View recipe modal --> 
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <h1 id="modal-title"></h1>
+        <p id="modal-type"></p>
         <p id="modal-ingredients"></p>
         <p id="modal-instructions"></p>
         <p id="modal-time"></p>
-      </div>
     </div>
-    <!-- The Modal -->
+    <!-- View recipe modal --> 
+
+    <!-- Add recipe Modal -->
     <div id="modal1" class="modal11">
     <!-- Modal content -->
       <div class="modal-content1">
@@ -144,7 +158,7 @@
          </form>
         </div>
       </div>
-      <!-- Modal content -->
+      <!-- Add recipe Modal content -->
     <footer>Footer</footer>
   </body>
 </html>
