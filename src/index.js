@@ -5,6 +5,21 @@ const apiEndpoint = "recipes.json";
 const display = document.querySelector("#display-data");
 const input = document.querySelector("#input");
 
+//Function to split input into an array of ingredients
+const splitInput = input => {
+  return input.split(",").map(ingredient => ingredient.trim());
+};
+
+// Function to check if at least one ingredient matches
+const hasMatchingIngredient = (recipeIngredients, queryIngredients) => {
+  for (const ingredient of queryIngredients) {
+    if (recipeIngredients.toLowerCase().includes(ingredient.toLowerCase())) {
+      return true;
+    }
+  }
+  return false;
+};
+
 //get data from json and insert it
 const getData = async () => {
   const res = await fetch(apiEndpoint);
@@ -15,18 +30,31 @@ const getData = async () => {
 
 const displayRecipes = async () => {
   let query = input.value;
+  let queryIngredients = splitInput(query);
   //console.log("Query::", query);
 
   const payload = await getData();
 
+  // let dataDisplay = payload
+  //   .filter(eventData => {
+  //     if (query === "") {
+  //       return false;
+  //     } else if (eventData.ingredients.toLowerCase().includes(query.toLowerCase())) {
+  //       return eventData;
+  //     }
+  //   })
+
   let dataDisplay = payload
     .filter(eventData => {
       if (query === "") {
+        return false; // Return true to display all recipes when the input is empty
+      } else if (hasMatchingIngredient(eventData.ingredients, queryIngredients)) {
+        return true;
+      } else {
         return false;
-      } else if (eventData.ingredients.toLowerCase().includes(query.toLowerCase())) {
-        return eventData;
       }
     })
+
     .map(object => {
       const { name, type, ingredients, instructions, time } = object;
 
@@ -88,3 +116,19 @@ viewButtons.forEach(button => {
   });
 });
 // End View recipe modal
+
+// // Event listener to open the modal when button is clicked
+// document.getElementById("openModal").addEventListener("click", function () {
+//   var modal = document.getElementById("modal1");
+//   modal.style.display = "block";
+// });
+
+// // Close modal when "x" button is clicked
+// document.querySelector(".close1").addEventListener("click", function () {
+//   var modal = document.getElementById("modal1");
+//   modal.style.display = "none";
+// });
+
+// if (window.location.hash === "#modal1") {
+//   window.location.hash = "";
+// }

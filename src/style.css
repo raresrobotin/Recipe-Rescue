@@ -126,12 +126,15 @@ header {
 .recipe-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* grid-template-columns: repeat(5, 1fr); */
   grid-gap: 20px;
+  margin-bottom: 50px;
 }
 
 .align-recipes {
   position: relative;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .recipe {
@@ -143,18 +146,10 @@ header {
 .recipe-img {
   width: 100%;
   height: auto;
-  opacity: 0.85;
+  /* opacity: 0.85; */
+  filter: brightness(50%);
   border-radius: 7%;
   border-top-left-radius: 7%;
-}
-
-.recipe-img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .recipe-title {
@@ -164,14 +159,30 @@ header {
   transform: translate(-50%, 50%);
   margin: 0;
   font-size: 18px;
-  text-shadow: 4px 4px 8px rgb(0, 0, 0);
+  text-shadow: 4px 4px 8px rgb(0, 0, 0); /* Adjust shadow properties as needed */
   white-space: nowrap;
   color: #fff;
   text-align: center;
   z-index: 1;
 }
 
-.recipe-overlay {
+/* Add New Recipe Modal */
+
+.add-img {
+  width: 76%;
+  height: auto;
+  /* opacity: 0.85; */
+  filter: brightness(100%);
+}
+
+#openModal {
+  width: 100%;
+  height: auto;
+  border-radius: 7%;
+  border-top-left-radius: 7%;
+}
+
+/* .recipe-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -181,7 +192,7 @@ header {
   border-radius: 7%;
   border-top-left-radius: 7%;
   z-index: 1;
-}
+} */
 
 .recipe-overlay::before {
   content: "";
@@ -195,6 +206,7 @@ header {
 }
 
 .view-btn {
+  position: relative;
   width: 60px;
   margin: 10px auto;
   margin: 10px auto;
@@ -208,7 +220,6 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px 15px;
   text-align: center;
-  position: relative;
   z-index: 1;
 }
 
@@ -224,21 +235,6 @@ header {
   max-width: 100%;
 }
 
-footer {
-  padding: 15px;
-  margin: 5px;
-}
-
-footer {
-  display: flex;
-  background-color: #114232;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
 .modal {
   display: none;
   position: fixed;
@@ -271,4 +267,173 @@ footer {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+#add-recipe {
+  margin: 50px;
+  border-radius: 15px;
+  border-style: dashed;
+  border-color: #aaaaaa;
+}
+
+#add-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal Styles */
+.modal11 {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content1 {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.modal11-input {
+  margin-bottom: 10px;
+}
+
+.modal11-input input {
+  width: calc(100% - 20px); /* Adjusted width for input */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal11-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal11-button:hover {
+  background-color: #45a049;
+}
+
+.close1 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Show modal when the button is clicked */
+.modal.open {
+  display: block;
+}
+
+#modal1:target {
+  display: block;
+}
+
+footer {
+  padding: 15px;
+  margin: 5px;
+}
+
+footer {
+  display: flex;
+  background-color: #114232;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Modal Styles */
+.modal11 {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content1 {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.modal11-input {
+  margin-bottom: 10px;
+}
+
+.modal11-input input {
+  width: calc(100% - 20px); /* Adjusted width for input */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal11-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal11-button:hover {
+  background-color: #45a049;
+}
+
+.close1 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Show modal when the button is clicked */
+.modal.open {
+  display: block;
+}
+
+#modal1:target {
+  display: block;
 }
