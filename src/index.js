@@ -20,7 +20,7 @@ const hasMatchingIngredient = (recipeIngredients, queryIngredients) => {
   return false;
 };
 
-//get data from json and insert it
+//Function to get data from json and insert it
 const getData = async () => {
   const res = await fetch(apiEndpoint);
   const data = await res.json();
@@ -34,15 +34,6 @@ const displayRecipes = async () => {
   //console.log("Query::", query);
 
   const payload = await getData();
-
-  // let dataDisplay = payload
-  //   .filter(eventData => {
-  //     if (query === "") {
-  //       return false;
-  //     } else if (eventData.ingredients.toLowerCase().includes(query.toLowerCase())) {
-  //       return eventData;
-  //     }
-  //   })
 
   let dataDisplay = payload
     .filter(eventData => {
@@ -73,26 +64,25 @@ const displayRecipes = async () => {
 
   display.innerHTML = dataDisplay;
 };
-displayRecipes();
-
-input.addEventListener("input", () => {
-  displayRecipes();
-});
 
 // Start View recipe modal
 function displayRecipe(recipe) {
   var modal = document.getElementById("myModal");
   var modalTitle = document.getElementById("modal-title");
-  var modalType = document.getElementById("modal-type");
-  var modalIngredients = document.getElementById("modal-ingredients");
-  var modalInstructions = document.getElementById("modal-instructions");
-  var modalTime = document.getElementById("modal-time");
+  var body = modal.querySelector(".modal-body");
 
   modalTitle.textContent = recipe.name;
-  modalType.textContent = "Type: " + recipe.type;
-  modalIngredients.textContent = "Ingredients: " + recipe.ingredients;
-  modalInstructions.textContent = "Instructions: " + recipe.instructions;
-  modalTime.textContent = "Time: " + recipe.time;
+  body.innerHTML = `
+    <div>
+      <img class="recipe-img" src="images/avocado.png" alt="avocado toast" style= "width:100px" />
+    </div>
+    <div>
+      <p><strong>Type:</strong> ${recipe.type}</p>
+      <p><strong>Ingredients:</strong> ${recipe.ingredients}</p>
+      <p><strong>Instructions:</strong> ${recipe.instructions}</p>
+      <p><strong>Time:</strong> ${recipe.time}</p> 
+    </div>
+  `;
 
   modal.style.display = "block";
 
@@ -101,6 +91,7 @@ function displayRecipe(recipe) {
     modal.style.display = "none";
   });
 }
+
 var viewButtons = document.querySelectorAll(".view-btn");
 viewButtons.forEach(button => {
   button.addEventListener("click", async function () {
@@ -117,18 +108,25 @@ viewButtons.forEach(button => {
 });
 // End View recipe modal
 
-// // Event listener to open the modal when button is clicked
-// document.getElementById("openModal").addEventListener("click", function () {
-//   var modal = document.getElementById("modal1");
-//   modal.style.display = "block";
-// });
+// Event listener to open the modal when button is clicked
+document.getElementById("openModal").addEventListener("click", function () {
+  console.log("click");
+  var modal = document.getElementById("modal1");
+  modal.style.display = "block";
+});
 
-// // Close modal when "x" button is clicked
-// document.querySelector(".close1").addEventListener("click", function () {
-//   var modal = document.getElementById("modal1");
-//   modal.style.display = "none";
-// });
+// Close modal when "x" button is clicked
+document.querySelector(".close1").addEventListener("click", function () {
+  var modal = document.getElementById("modal1");
+  modal.style.display = "none";
+});
 
-// if (window.location.hash === "#modal1") {
-//   window.location.hash = "";
-// }
+if (window.location.hash === "#modal1") {
+  window.location.hash = "";
+}
+
+displayRecipes();
+
+input.addEventListener("input", () => {
+  displayRecipes();
+});

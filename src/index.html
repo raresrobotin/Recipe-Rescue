@@ -25,7 +25,7 @@
       <div class="recipe-filter">
         <label for="ingredients">Ingredients</label>
         <input id="input" type="text" placeholder="pepper, egg, apple..." name="Ingredients" autofocus />
-        
+
         <span>|</span>
         <label for="type">Type of meal</label>
         <input id="input" type="text" placeholder="-Select-" list="input-list" name="Type of meal" />
@@ -48,14 +48,14 @@
           <option value="1 hour"></option>
         </datalist>
         <button type="button" class="Search">Search</button>
-      </div>      
+      </div>
       <!--End Search/Filter-->
 
       <div id="display-data"></div>
 
-      <div id="recipe-results" class="recipe-container" >
-         <!-- Start MODAL ADD NEW RECIPE BUTTON-->
-         <div>
+      <div id="recipe-results" class="recipe-container">
+        <!-- Start MODAL ADD NEW RECIPE BUTTON-->
+        <div>
           <button id="openModal">
             <img class="add-img" src="images/plus_grey.png" alt="plus sign" height="110px" />
           </button>
@@ -67,7 +67,7 @@
           <h1 class="recipe-title" id="modal-title-1">Avocado Toast</h1>
           <button type="menu" class="view-btn" data-recipe-index="0">View</button>
         </div>
-        <div class="align-recipes">
+        <!-- <div class="align-recipes">
           <div class="recipe-overlay"></div>
           <img class="recipe-img" src="images/berry yogurt.png" alt="recipe pic" height="110px" />
           <h1 class="recipe-title" id="modal-title-2">Berry Yogurt</h1>
@@ -126,50 +126,47 @@
           <img class="recipe-img" src="images/oreo-bites.png" alt="recipe pic" height="110px" />
           <h1 class="recipe-title" id="modal-title-11">Oreo Cheesecake</h1>
           <button type="menu" class="view-btn" data-recipe-index="10">View</button>
-        </div>
+        </div> -->
       </div>
     </section>
     <section>
+      <!-- Start View recipe modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1 id="modal-title"></h1>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+      <!-- End View recipe modal -->
 
-       <!-- Start View recipe modal --> 
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h1 id="modal-title"></h1>
-        <p id="modal-type"></p>
-        <p id="modal-ingredients"></p>
-        <p id="modal-instructions"></p>
-        <p id="modal-time"></p>
-    </div>
-    <!-- End View recipe modal --> 
+      <!-- Start Add recipe Modal -->
+      <div id="modal1" class="modal11">
+        <!-- Modal content -->
+        <div class="modal-content1">
+          <span class="close1">&times;</span>
+          <h2>Add New Recipe</h2>
+          <div id="add-recipe-form">
+            <form>
+              <label for="name">Recipe name</label>
+              <input type="text" placeholder="recipe name" name="name" />
 
-    <!-- Start Add recipe Modal -->
-    <div id="modal1" class="modal11">
-    <!-- Modal content -->
-      <div class="modal-content1">
-        <span class="close1">&times;</span>
-        <h2>Add New Recipe</h2>
-        <div id="add-recipe-form">
-          <form>
-            <label for="name">Recipe name</label>
-            <input type="text" placeholder="recipe name" name="name" />
+              <label for="ingredients">Ingredients</label>
+              <input type="text" placeholder="recipe ingredients" name="ingredients" />
 
-            <label for="ingredients">Ingredients</label>
-            <input type="text" placeholder="recipe ingredients" name="ingredients" />
+              <label for="instructions">Cooking instructions</label>
+              <input type="text" placeholder="cooking instructions" name="instructions" />
 
-           <label for="instructions">Cooking instructions</label>
-           <input type="text" placeholder="cooking instructions" name="instructions" />
+              <label for="time">Cooking time</label>
+              <input type="text" placeholder="time of cooking" name="time_of_cooking" />
 
-            <label for="time">Cooking time</label>
-            <input type="text" placeholder="time of cooking" name="time_of_cooking" />
-
-           <button type="submit" class="add-new">Add Recipe</button>
-         </form>
+              <button type="submit" class="add-new">Add Recipe</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
-  <footer>Footer</footer>
-      <!-- Add recipe Modal content -->
-
+    <footer>Footer</footer>
+    <!-- Add recipe Modal content -->
   </body>
 </html>
