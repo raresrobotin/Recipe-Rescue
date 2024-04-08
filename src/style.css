@@ -415,6 +415,10 @@ footer {
   background-color: #45a049;
 }
 
+.modal-body {
+  display: flex;
+}
+
 .close1 {
   color: #aaa;
   float: right;
