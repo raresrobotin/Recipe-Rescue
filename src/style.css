@@ -131,11 +131,11 @@ header {
   margin-bottom: 50px;
 }
 
-.align-recipes {
+/* .align-recipes {
   position: relative;
   text-align: center;
   margin-bottom: 20px;
-}
+} */
 
 .recipe {
   text-align: center;
@@ -152,10 +152,11 @@ header {
   border-top-left-radius: 7%;
 }
 
-.recipe-title {
+.recipe-name {
   position: absolute;
   bottom: 50%;
   left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
   transform: translate(-50%, 50%);
   margin: 0;
   font-size: 18px;
@@ -211,6 +212,12 @@ header {
 }
 
 .view-btn {
+  display: block; /* Make the button a block-level element */
+  margin: 0 auto; /* Center the button horizontally */
+  text-align: center; /* Center the text inside the button */
+}
+
+.view-btn {
   position: relative;
   width: 60px;
   margin: 10px auto;
@@ -238,6 +245,33 @@ header {
 
 .recipe-img img {
   max-width: 100%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #009b7c84;
+  color: #fff;
+  width: 110px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 80%;
+  left: 70%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal {
