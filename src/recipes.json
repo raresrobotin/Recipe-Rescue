@@ -41,11 +41,11 @@
     "ingredients": "3 eggs, 2 tablespoons milk, salt and pepper to taste.",
     "instructions": "Crack the eggs into a bowl, add milk, salt, and pepper, and whisk until well combined.<br> Heat a non-stick skillet over medium heat and pour in the egg mixture. <br>Stir the eggs gently with a spatula until they are cooked to your desired consistency. <br>Serve hot with toast or a side of fresh fruit",
     "time": "10 minutes",
-    "image": "mages/sc-eggs.png"
+    "image": "images/sc-eggs.png"
   },
 
   {
-    "name": "Peanut Butter Banana Toast",
+    "name": "Banana Toast",
     "type": "Breakfast",
     "ingredients": "2 slices of whole wheat bread, 2 tablespoons peanut butter, 1 ripe banana, thinly sliced. Optional: honey or maple syrup for drizzling Optional: a sprinkle of chia seeds or sliced almonds",
     "instructions": "Toast the slices of whole wheat bread until golden brown. <br>Spread peanut butter evenly on each slice of toast. Arrange the thinly sliced banana on top of the peanut butter layer. <br>Drizzle with honey or maple syrup if desired, and sprinkle with chia seeds or sliced almonds for extra crunch. <br>Serve immediately and enjoy your delicious peanut butter banana toast!",
@@ -72,7 +72,7 @@
   },
 
   {
-    "name": "Honey Garlic Pork Chops",
+    "name": "Honey Pork Chops",
     "type": "Dinner",
     "ingredients": "4 pork chops, 3 tablespoons honey, 2 cloves garlic, minced, 2 tablespoons soy sauce",
     "instructions": "Preheat oven to 375°F (190°C). <br>In a small bowl, mix together honey, minced garlic, and soy sauce.<br>Place pork chops in a baking dish and pour the honey garlic mixture over them, ensuring they're evenly coated. <br>Bake in the preheated oven for 15-18 minutes, or until pork chops are cooked through flipping halfway through cooking. <br>Serve hot and enjoy your flavorful Honey Garlic Pork Chops!",
@@ -81,7 +81,7 @@
   },
 
   {
-    "name": "Fruit Salad with Honey-Lime Dressing",
+    "name": "Fruit Salad",
     "type": "Dessert",
     "ingredients": "Assorted fresh fruits (such as strawberries, blueberries, kiwi, pineapple, grapes), 2 tablespoons honey, 1 tablespoon lime juice",
     "instructions": "Wash and prepare the fruits by slicing or chopping them into bite-sized pieces. <br>In a small bowl, whisk together honey and lime juice to make the dressing. <br>Arrange the mixed fruits in a serving bowl or platter. <br>Drizzle the honey-lime dressing over the fruits. <br>Garnish with fresh mint leaves if desired. Serve immediately or refrigerate until ready to serve. <br>Enjoy your refreshing and colorful Fruit Salad with Honey-Lime Dressing!",
@@ -90,11 +90,11 @@
   },
 
   {
-    "name": "No-Bake Oreo Cheesecake Bites",
+    "name": "Oreo Cheesecake",
     "type": "Dessert",
     "ingredients": "1 package of Oreo cookies, 8 ounces cream cheese, softened, 1/4 cup powdered sugar, 1/2 teaspoon vanilla extract, chocolate chips or chocolate candy melts for dipping (optional)",
-    "instructions": "Crush the Oreo cookies into fine crumbs using a food processor or blender. <br>In a mixing bowl, beat together softened cream cheese, powdered sugar, and vanilla extract until smooth. <br>Stir in the crushed Oreo crumbs until well combined. <br>Roll the mixture into small balls, about 1 inch in diameter, and place them on a baking sheet lined with parchment paper. <br>Chill the Oreo cheesecake bites in the refrigerator for at least 1 hour, or until firm. <br>Optional: Melt chocolate chips or candy melts in the microwave and dip each chilled cheesecake bite into the melted chocolate. <br>Return the coated cheesecake bites to the refrigerator to set the chocolate. <br>Serve chilled and enjoy your delightful No-Bake Oreo Cheesecake Bites!",
-    "time": "15 minutes for preparation, 1 hour chilling time",
+    "instructions": "Crush the Oreo cookies into fine crumbs using a food processor or blender. <br>In a mixing bowl, beat together softened cream cheese, powdered sugar, and vanilla extract until smooth. <br>Stir in the crushed Oreo crumbs until well combined. <br>Roll the mixture into small balls, about 1 inch in diameter, and place them on a baking sheet lined with parchment paper. <br>Chill the Oreo cheesecake bites in the refrigerator for at least 1 hour, or until firm. <br>Optional: Melt chocolate chips or candy melts in the microwave and dip each chilled cheesecake bite into the melted chocolate. <br>Return the coated cheesecake bites to the refrigerator to set the chocolate. <br>Serve chilled and enjoy your delightful No-Bake Oreo Cheesecake Bites! <br> Leave it one hour to chill.",
+    "time": "15 minutes",
     "image": "images/oreo-bites.png"
   }
 ]

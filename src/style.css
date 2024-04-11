@@ -136,7 +136,7 @@ header {
 .recipe-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   margin-bottom: 50px;
 }
@@ -156,7 +156,6 @@ header {
 .recipe-img {
   width: 100%;
   height: auto;
-  /* opacity: 0.85; */
   filter: brightness(50%);
   border-radius: 7%;
   border-top-left-radius: 7%;
@@ -184,6 +183,16 @@ header {
   height: auto;
   /* opacity: 0.85; */
   filter: brightness(100%);
+}
+
+.image-container {
+  float: left;
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.text-container {
+  overflow: hidden; /* Clear float */
+  margin-left: 420px; /* Width of the image + margin */
 }
 
 #openModal {
@@ -332,7 +341,6 @@ header {
 
 footer {
   padding: 15px;
-  margin: 5px;
 }
 
 footer {
