@@ -53,7 +53,7 @@ const displayRecipes = async () => {
     <div class= "container">
        <div class="image-container"> 
          <img src="${image}" alt="${name} Image" style= "width:300px; position: relative; filter: brightness(80%);
-          border-radius: 7%; border-top-left-radius: 7%; margin-right: 20px">
+          border-radius: 7%; border-top-left-radius: 7%; margin-right: 20px; margin-top: 20px;">
         </div>
         <div class="text-container"> 
           <p> <strong>Name:</strong> ${name}
