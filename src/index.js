@@ -47,15 +47,20 @@ const displayRecipes = async () => {
     })
 
     .map(object => {
-      const { name, type, ingredients, instructions, time } = object;
+      const { image, name, type, ingredients, instructions, time } = object;
 
       return `
     <div class= "container">
-    <p> Name: ${name}</p>
-    <p> Type of meal: ${type}</p>
-    <p> Ingredients: ${ingredients}</p>
-    <p> Instructions: ${instructions}</p>
-    <p> Cooking Time: ${time}</p>
+       <div class="image-container"> 
+         <img src="${image}" alt="${name} Image" style= "width:300px; position: relative; filter: brightness(80%);
+          border-radius: 7%; border-top-left-radius: 7%; margin-right: 20px">
+        </div>
+        <div class="text-container"> 
+          <p> <strong>Name:</strong> ${name}
+          <p> <strong>Type of meal:</strong> ${type}</p>
+          <p> <strong>Ingredients:</strong> ${ingredients}</p>
+          <p> <strong>Instructions:</strong> ${instructions}</p>
+          <p> <strong>Cooking Time:</strong> ${time}</p>
     </div>
     <hr>
     `;
@@ -64,6 +69,54 @@ const displayRecipes = async () => {
 
   display.innerHTML = dataDisplay;
 };
+displayRecipes();
+
+const displayAllRecipes = async () => {
+  const payload = await getData();
+  const recipeContainer = document.getElementById("recipe-results");
+
+  payload.forEach((recipe, index) => {
+    const div = document.createElement("div");
+    div.classList.add("tooltip");
+
+    const img = document.createElement("img");
+    img.classList.add("recipe-img");
+    img.src = recipe.image;
+    img.alt = recipe.name;
+    img.name = recipe.name;
+
+    const span = document.createElement("span");
+    span.classList.add("tooltiptext");
+    span.textContent = `> ${recipe.time}`;
+
+    const pName = document.createElement("p");
+    pName.classList.add("recipe-name");
+    pName.textContent = recipe.name;
+
+    const button = document.createElement("button");
+    button.setAttribute("type", "menu");
+    button.classList.add("view-btn");
+    button.dataset.recipeIndex = index;
+    button.textContent = "View";
+    button.addEventListener("click", async () => {
+      try {
+        displayRecipe(recipe);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    });
+
+    div.appendChild(img);
+    div.appendChild(span);
+    div.appendChild(pName);
+    div.appendChild(button);
+
+    recipeContainer.appendChild(div);
+  });
+};
+
+// Call displayAllRecipes function when the page loads
+window.addEventListener("load", displayAllRecipes);
 
 // Start View recipe modal
 function displayRecipe(recipe) {
