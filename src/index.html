@@ -49,11 +49,12 @@
         </datalist>
       </div>
       <!--End Search/Filter-->
+
+      <div id="display-data"></div>
+
       <div id="subtitle2">
         <p>All recipes</p>
       </div>
-
-      <div id="display-data"></div>
 
       <div id="recipe-results" class="recipe-container">
         <!-- Start MODAL ADD NEW RECIPE BUTTON-->
@@ -86,19 +87,29 @@
           <h2>Add New Recipe</h2>
           <div id="add-recipe-form">
             <form>
-              <label for="name">Recipe name</label>
-              <input type="text" placeholder="recipe name" name="name" />
-
-              <label for="ingredients">Ingredients</label>
-              <input type="text" placeholder="recipe ingredients" name="ingredients" />
-
-              <label for="instructions">Cooking instructions</label>
-              <input type="text" placeholder="cooking instructions" name="instructions" />
-
-              <label for="time">Cooking time</label>
-              <input type="text" placeholder="time of cooking" name="time_of_cooking" />
-
-              <button type="submit" class="add-new">Add Recipe</button>
+              <div>
+                <label for="name">Recipe name</label>
+                <br />
+                <input type="text" placeholder="" name="name" required />
+              </div>
+              <div>
+                <label for="time">Cooking time</label>
+                <br />
+                <input type="text" placeholder="" name="time_of_cooking" required />
+              </div>
+              <div>
+                <label for="ingredients">Ingredients</label>
+                <br />
+                <textarea id="recipe-ingredients" rows="5" required></textarea>
+              </div>
+              <div>
+                <label for="instructions">Cooking instructions</label>
+                <br />
+                <textarea id="cooking-instructions" rows="10" required></textarea>
+              </div>
+              <div>
+                <button type="submit" class="add-new">Add Recipe</button>
+              </div>
             </form>
           </div>
         </div>
