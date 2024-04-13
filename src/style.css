@@ -112,24 +112,6 @@ header {
   margin-right: 10px;
 }
 
-/* .Search {
-  text-align: center;
-  background-color: #009b7d;
-  border-radius: 15px;
-  border: 1px;
-  box-sizing: border-box;
-  color: #fff;
-  border-radius: 13px;
-  margin-left: 20px;
-  padding: 5px 11px;
-  font-size: 15px;
-  touch-action: manipulation;
-  cursor: pointer;
-  position: relative;
-  width: 100px;
-  height: 30px;
-} */
-
 .Search:hover {
   background-color: #13aa52;
 }
@@ -151,12 +133,6 @@ header {
   grid-gap: 20px;
   margin-bottom: 50px;
 }
-
-/* .align-recipes {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
-} */
 
 .recipe {
   text-align: center;
@@ -180,30 +156,28 @@ header {
   transform: translate(-50%, 50%);
   margin: 0;
   font-size: 18px;
-  text-shadow: 4px 4px 8px rgb(0, 0, 0); /* Adjust shadow properties as needed */
+  text-shadow: 4px 4px 8px rgb(0, 0, 0);
   white-space: nowrap;
   color: #fff;
   text-align: center;
   z-index: 1;
 }
 
-/* Add New Recipe Modal */
-
 .add-img {
   width: 76%;
   height: auto;
-  /* opacity: 0.85; */
+
   filter: brightness(100%);
 }
 
 .image-container {
   float: left;
-  margin-right: 20px; /* Adjust as needed */
+  margin-right: 50px;
 }
 
 .text-container {
-  overflow: hidden; /* Clear float */
-  margin-left: 420px; /* Width of the image + margin */
+  overflow: hidden;
+  margin-left: 150px; /* Width of the image + margin */
 }
 
 #openModal {
@@ -218,18 +192,6 @@ header {
   background-color: #009b7d;
 }
 
-/* .recipe-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.645), rgba(0, 0, 0, 0));
-  border-radius: 7%;
-  border-top-left-radius: 7%;
-  z-index: 1;
-} */
-
 .recipe-overlay::before {
   content: "";
   position: absolute;
@@ -242,9 +204,9 @@ header {
 }
 
 .view-btn {
-  display: block; /* Make the button a block-level element */
-  margin: 0 auto; /* Center the button horizontally */
-  text-align: center; /* Center the text inside the button */
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .view-btn {
@@ -396,7 +358,6 @@ footer {
 
 .modal-content1 input {
   min-width: 95%;
-  /* min-width: 20px; */
   padding: 8px;
   margin: 0 4px 0 0;
   border: 1px solid #666;
