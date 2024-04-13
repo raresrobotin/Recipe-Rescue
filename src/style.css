@@ -495,4 +495,10 @@ footer {
   padding: 15px;
   display: inline-block;
   text-align: center;
+  color: #8cd3bb;
+  font-size: 20px;
+}
+a {
+  color: #000;
+  font-size: 20px;
 }
