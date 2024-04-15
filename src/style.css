@@ -286,6 +286,15 @@ header {
   width: 80%;
 }
 
+.modal-img {
+  border-radius: 5%;
+  box-shadow: 0px 0px 8px gray;
+}
+
+#modal-title {
+  text-align: center;
+}
+
 .close {
   color: #aaaaaa;
   float: right;

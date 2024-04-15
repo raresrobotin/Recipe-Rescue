@@ -124,10 +124,14 @@ function displayRecipe(recipe) {
   var modalTitle = document.getElementById("modal-title");
   var body = modal.querySelector(".modal-body");
 
+  var img = document.createElement("img");
+  img.src = recipe.image;
+  img.classList.add("modal-image");
+
   modalTitle.textContent = recipe.name;
   body.innerHTML = `
     <div>
-      <img class="recipe-img" src="images/avocado.png" alt="avocado toast" style= "width:100px" />
+    <img class="modal-img" src="${recipe.image}" alt="${recipe.name}" style= "width:250px; margin-right: 20px; margin-top: 20px;"" />
     </div>
     <div>
       <p><strong>Type:</strong> ${recipe.type}</p>
