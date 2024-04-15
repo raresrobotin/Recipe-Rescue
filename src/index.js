@@ -1,7 +1,7 @@
 import "./style.css";
 console.warn("start app");
 
-const apiEndpoint = "recipes.json";
+const apiEndpoint = "data/recipes.json";
 const display = document.querySelector("#display-data");
 const input = document.querySelector("#input");
 
@@ -69,7 +69,6 @@ const displayRecipes = async () => {
 
   display.innerHTML = dataDisplay;
 };
-displayRecipes();
 
 const displayAllRecipes = async () => {
   const payload = await getData();
@@ -114,9 +113,6 @@ const displayAllRecipes = async () => {
     recipeContainer.appendChild(div);
   });
 };
-
-// Call displayAllRecipes function when the page loads
-window.addEventListener("load", displayAllRecipes);
 
 // Start View recipe modal
 function displayRecipe(recipe) {
@@ -183,6 +179,9 @@ if (window.location.hash === "#modal1") {
 }
 
 displayRecipes();
+
+// Call displayAllRecipes function when the page loads
+window.addEventListener("load", displayAllRecipes);
 
 input.addEventListener("input", () => {
   displayRecipes();
