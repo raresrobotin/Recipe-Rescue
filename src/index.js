@@ -5,9 +5,30 @@ const apiEndpoint = "data/recipes.json";
 const display = document.querySelector("#display-data");
 const input = document.querySelector("#input");
 
-//Function to split input into an array of ingredients
+// //Function to split input into an array of ingredients
+// const splitInput = input => {
+//   return input.split(",").map(ingredient => ingredient.trim());
+// };
+
 const splitInput = input => {
-  return input.split(",").map(ingredient => ingredient.trim());
+  const ingredientsArray = [];
+  let currentIngredient = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < input.length; i++) {
+    const char = input[i];
+    if (char === '"') {
+      inQuotes = !inQuotes;
+    } else if (char === "," && !inQuotes) {
+      ingredientsArray.push(currentIngredient.trim());
+      currentIngredient = "";
+    } else {
+      currentIngredient += char;
+    }
+  }
+
+  ingredientsArray.push(currentIngredient.trim());
+  return ingredientsArray.filter(ingredient => ingredient !== ""); // Filter out empty strings
 };
 
 // Function to check if at least one ingredient matches
