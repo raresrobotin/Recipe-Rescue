@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Avocado Toast",
+    "type": "Breakfast",
+    "ingredients": "1 ripe avocado, 2 slices of whole grain bread, salt and pepper to taste",
+    "instructions": "Toast the slices of bread until golden brown. <br>Mash the avocado in a bowl and season with salt and pepper. <br>Spread the mashed avocado evenly on the toasted bread slices. <br>Serve immediately.",
+    "time": "10 minutes",
+    "image": "images/avocado.png"
+  },
+
+  {
+    "name": "Berry Yogurt Parfait",
+    "type": "Breakfast",
+    "ingredients": "1 cup Greek yogurt, 1/2 cup mixed berries (strawberries blueberries, raspberries), 1/4 cup granola",
+    "instructions": "In a glass or bowl, layer Greek yogurt, mixed berries, and granola.<br> Repeat the layers until all ingredients are used up.<br> Serve immediatel as a delicious and nutritious breakfast option.",
+    "time": "5 minutes",
+    "image": "images/berry yogurt.png"
+  },
+
+  {
+    "name": "Caprese Salad",
+    "type": "Lunch",
+    "ingredients": "2 large tomatoes, sliced, 8 ounces fresh mozzarella cheese, sliced, 1/4 cup fresh basil leaves, 2 tablespoons balsamic glaze",
+    "instructions": "Toast the slices of whole wheat bread until golden brown. Spread peanut butter evenly on each slice of toast. <br>Arrange the thinly sliced banana on top of the peanut butter layer. <br>Drizzle with honey or maple syrup if desired, and sprinkle with chia seeds or sliced almonds for extra crunch. <br>Serve immediately and enjoy your delicious peanut butter banana toast!",
+    "time": "10 minutes",
+    "image": "images/caprese.png"
+  },
+
+  {
+    "name": "Cucumber Hummus Bites",
+    "type": "Snack",
+    "ingredients": "1 cucumber, Hummus, Cherry tomatoes, sliced in half. Optional toppings: feta cheese, olives, parsley",
+    "instructions": "Cut the cucumber into thick slices, about 1/2 inch thick.Using a small spoon or melon baller, scoop out a small portion of the center of each cucumber slice to create a well. <br>Fill each cucumber well with hummus.<br> Top each cucumber hummus bite with a slice of cherry tomato.<br> Add optional toppings such as crumbled feta cheese, sliced olives, or chopped parsley if desired. <br>Serve immediately and enjoy your refreshing Cucumber Hummus Bites!",
+    "time": "10 minutes",
+    "image": "images/cucumber bites.png"
+  },
+
+  {
+    "name": "Simple Scrambled Eggs",
+    "type": "Breakfast",
+    "ingredients": "3 eggs, 2 tablespoons milk, salt and pepper to taste.",
+    "instructions": "Crack the eggs into a bowl, add milk, salt, and pepper, and whisk until well combined.<br> Heat a non-stick skillet over medium heat and pour in the egg mixture. <br>Stir the eggs gently with a spatula until they are cooked to your desired consistency. <br>Serve hot with toast or a side of fresh fruit",
+    "time": "10 minutes",
+    "image": "images/sc-eggs.png"
+  },
+
+  {
+    "name": "Banana Toast",
+    "type": "Breakfast",
+    "ingredients": "2 slices of whole wheat bread, 2 tablespoons peanut butter, 1 ripe banana, thinly sliced. Optional: honey or maple syrup for drizzling Optional: a sprinkle of chia seeds or sliced almonds",
+    "instructions": "Toast the slices of whole wheat bread until golden brown. <br>Spread peanut butter evenly on each slice of toast. Arrange the thinly sliced banana on top of the peanut butter layer. <br>Drizzle with honey or maple syrup if desired, and sprinkle with chia seeds or sliced almonds for extra crunch. <br>Serve immediately and enjoy your delicious peanut butter banana toast!",
+    "time": "3 minutes",
+    "image": "images/pb-toast.png"
+  },
+
+  {
+    "name": "Pesto Chicken Pasta",
+    "type": "Dinner",
+    "ingredients": "8 ounces pasta of your choice, 2 boneless, skinless chicken breasts, diced, 1/4 cup store-bought pesto sauce, 1/4 cup grated Parmesan cheese",
+    "instructions": "Cook pasta according to package instructions.<br> Drain and set aside.In a separate skillet, cook diced chicken until browned and cooked through, about 6-8 minutes. <br>Add cooked pasta to the skillet with chicken. Stir in pesto sauce and Parmesan cheese until everything is well coated and heated through. <br>Serve hot and garnish with additional Parmesan cheese, if desired. <br>Enjoy this flavorful pasta dish!",
+    "time": "20 minutes",
+    "image": "images/pesto-pasta.png"
+  },
+
+  {
+    "name": "Veggie Stir-Fry",
+    "type": "Dinner",
+    "ingredients": "2 cups of mixed vegetables (such as bell peppers, broccoli carrots, and snap peas), chopped, 2 tablespoons of soy sauce, 1 tablespoon of sesame oil, 1 clove of garlic, minced",
+    "instructions": "Heat sesame oil in a large skillet or wok over medium-high heat. <br>Add minced garlic to the skillet and sauté for about 30 seconds. <br>Add mixed vegetables to the skillet and stir-fry until they are tender-crisp, about 5-7 minutes. <br>Pour soy sauce over the vegetables and toss to coat evenly. <br>Cook for another 1-2 minutes, then remove from heat. <br>Serve hot as a standalone dish or with cooked rice or noodles if desired.",
+    "time": "15 minutes",
+    "image": "images/stirfry.png"
+  },
+
+  {
+    "name": "Honey Pork Chops",
+    "type": "Dinner",
+    "ingredients": "4 pork chops, 3 tablespoons honey, 2 cloves garlic, minced, 2 tablespoons soy sauce",
+    "instructions": "Preheat oven to 375°F (190°C). <br>In a small bowl, mix together honey, minced garlic, and soy sauce.<br>Place pork chops in a baking dish and pour the honey garlic mixture over them, ensuring they're evenly coated. <br>Bake in the preheated oven for 15-18 minutes, or until pork chops are cooked through flipping halfway through cooking. <br>Serve hot and enjoy your flavorful Honey Garlic Pork Chops!",
+    "time": "20 minutes",
+    "image": "images/pork-chops.png"
+  },
+
+  {
+    "name": "Fruit Salad",
+    "type": "Dessert",
+    "ingredients": "Assorted fresh fruits (such as strawberries, blueberries, kiwi, pineapple, grapes), 2 tablespoons honey, 1 tablespoon lime juice",
+    "instructions": "Wash and prepare the fruits by slicing or chopping them into bite-sized pieces. <br>In a small bowl, whisk together honey and lime juice to make the dressing. <br>Arrange the mixed fruits in a serving bowl or platter. <br>Drizzle the honey-lime dressing over the fruits. <br>Garnish with fresh mint leaves if desired. Serve immediately or refrigerate until ready to serve. <br>Enjoy your refreshing and colorful Fruit Salad with Honey-Lime Dressing!",
+    "time": "10 minutes",
+    "image": "images/fr-salad.png"
+  },
+
+  {
+    "name": "Oreo Cheesecake",
+    "type": "Dessert",
+    "ingredients": "1 package of Oreo cookies, 8 ounces cream cheese, softened, 1/4 cup powdered sugar, 1/2 teaspoon vanilla extract, chocolate chips or chocolate candy melts for dipping (optional)",
+    "instructions": "Crush the Oreo cookies into fine crumbs using a food processor or blender. <br>In a mixing bowl, beat together softened cream cheese, powdered sugar, and vanilla extract until smooth. <br>Stir in the crushed Oreo crumbs until well combined. <br>Roll the mixture into small balls, about 1 inch in diameter, and place them on a baking sheet lined with parchment paper. <br>Chill the Oreo cheesecake bites in the refrigerator for at least 1 hour, or until firm. <br>Optional: Melt chocolate chips or candy melts in the microwave and dip each chilled cheesecake bite into the melted chocolate. <br>Return the coated cheesecake bites to the refrigerator to set the chocolate. <br>Serve chilled and enjoy your delightful No-Bake Oreo Cheesecake Bites! <br> Leave it one hour to chill.",
+    "time": "15 minutes",
+    "image": "images/oreo-bites.png"
+  }
+]
