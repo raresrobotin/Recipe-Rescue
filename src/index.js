@@ -59,14 +59,13 @@ const displayRecipes = async () => {
   let dataDisplay = payload
     .filter(eventData => {
       if (query === "") {
-        return false; // Return true to display all recipes when the input is empty
+        return false;
       } else if (hasMatchingIngredient(eventData.ingredients, queryIngredients)) {
         return true;
       } else {
         return false;
       }
     })
-
     .map(object => {
       const { image, name, type, ingredients, instructions, time } = object;
 

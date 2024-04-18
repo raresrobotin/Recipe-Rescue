@@ -156,23 +156,35 @@ header {
 
 .recipe-name {
   position: absolute;
-  bottom: 50%;
+  top: 20%;
+  bottom: 10%;
   left: 50%;
   font-family: Arial, Helvetica, sans-serif;
-  transform: translate(-50%, 50%);
-  margin: 0;
-  font-size: 18px;
-  text-shadow: 4px 4px 8px rgb(0, 0, 0);
-  white-space: nowrap;
+  transform: translateX(-50%);
+  font-size: 22px;
+  text-shadow: 0.2em 0.2em 0.4em rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: center;
+  display: inline-block;
   z-index: 1;
+}
+
+@media screen and (max-width: 1536px) {
+  .recipe-name {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 1056px) {
+  .recipe-name {
+    font-size: 2vw;
+    top: 0%;
+  }
 }
 
 .add-img {
   width: 76%;
   height: auto;
-
   filter: brightness(100%);
 }
 
