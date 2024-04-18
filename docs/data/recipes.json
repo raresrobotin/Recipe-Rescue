@@ -9,7 +9,7 @@
   },
 
   {
-    "name": "Berry Yogurt Parfait",
+    "name": "Berry Yogurt",
     "type": "Breakfast",
     "ingredients": "1 cup Greek yogurt, 1/2 cup mixed berries (strawberries blueberries, raspberries), 1/4 cup granola",
     "instructions": "In a glass or bowl, layer Greek yogurt, mixed berries, and granola.<br> Repeat the layers until all ingredients are used up.<br> Serve immediatel as a delicious and nutritious breakfast option.",
@@ -27,7 +27,7 @@
   },
 
   {
-    "name": "Cucumber Hummus Bites",
+    "name": "Cucumber Bites",
     "type": "Snack",
     "ingredients": "1 cucumber, Hummus, Cherry tomatoes, sliced in half. Optional toppings: feta cheese, olives, parsley",
     "instructions": "Cut the cucumber into thick slices, about 1/2 inch thick.Using a small spoon or melon baller, scoop out a small portion of the center of each cucumber slice to create a well. <br>Fill each cucumber well with hummus.<br> Top each cucumber hummus bite with a slice of cherry tomato.<br> Add optional toppings such as crumbled feta cheese, sliced olives, or chopped parsley if desired. <br>Serve immediately and enjoy your refreshing Cucumber Hummus Bites!",
@@ -36,7 +36,7 @@
   },
 
   {
-    "name": "Simple Scrambled Eggs",
+    "name": "Scrambled Eggs",
     "type": "Breakfast",
     "ingredients": "3 eggs, 2 tablespoons milk, salt and pepper to taste.",
     "instructions": "Crack the eggs into a bowl, add milk, salt, and pepper, and whisk until well combined.<br> Heat a non-stick skillet over medium heat and pour in the egg mixture. <br>Stir the eggs gently with a spatula until they are cooked to your desired consistency. <br>Serve hot with toast or a side of fresh fruit",
